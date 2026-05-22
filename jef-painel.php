@@ -72,7 +72,7 @@ function jef_painel_additional_admin_color_schemes() {
     wp_admin_css_color(
         'jef-painel',
         'Painel Jeferson',
-        plugins_url( "jef-painel-colors.css", __FILE__)
+        plugins_url( "jef-painel-colors.css", __FILE__) . '?ver=1.0.1'
     );
 }
 add_action('admin_init', 'jef_painel_additional_admin_color_schemes');
