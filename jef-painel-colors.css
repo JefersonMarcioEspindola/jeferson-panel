@@ -1,27 +1,38 @@
 /* Paleta global (versão roxo-azulada) ------------------------------------- */
 :root {
-  /* Primários (já estavam roxo-azulados) */
-  --color--primary: #2859FF;  /* primário */
-  --color--primary-hover: #2859FF;  /* hover/active */
+  /* Bricks Colors */
+  --bricks-color-utfpab: #5C2FFF;  /* primário */
+  --bricks-color-ggoxsn: #471FD7;  /* hover/active */
+  --bricks-color-dxogit: #01040C;  /* quase-preto profundo (bg escuro, headers) */
+  --bricks-color-lzwfjx: #1F2125;  /* preto de texto (alto contraste)          */
+  --bricks-color-vuxede: #2B2D33;  /* cinza 900 (subtítulos, ícones desativ.)  */
+  --bricks-color-oyhxuv: #5E6572;  /* cinza 600 (texto secundário)             */
+  --bricks-color-nmfczu: #8C92A1;  /* cinza 500 (metadados, bordas suaves)     */
+  --bricks-color-nccynw: #C3C8D2;  /* cinza 300 (divisórias, inputs default)   */
+  --bricks-color-erofuw: #E7EAF1;  /* cinza 200 (bg seções, hover de cards)    */
+  --bricks-color-yquaag: #F8F9FC;  /* cinza 50  (bg geral light)               */
+  --bricks-color-adekln: #FFFFFF;  /* branco */
+  --bricks-color-fzjjgf: rgba(255, 255, 255, 0.75);
+  --bricks-color-fizpsx: rgba(255, 255, 255, 0.50);
+  --bricks-color-bdrddp: rgba(255, 255, 255, 0.25);
+  --bricks-color-rmdbpx: rgba(255, 255, 255, 0.00);
 
-  /* Neutros frios (com leve viés azulado) */
-  --color--deep-black: #0B0B0E;  /* quase-preto profundo (bg escuro, headers) */
-  --color--text-dark: #1F2125;  /* preto de texto (alto contraste)          */
-  --color--gray-900: #2B2D33;  /* cinza 900 (subtítulos, ícones desativ.)  */
-  --color--gray-600: #5E6572;  /* cinza 600 (texto secundário)             */
-  --color--gray-500: #8C92A1;  /* cinza 500 (metadados, bordas suaves)     */
-  --color--gray-300: #C3C8D2;  /* cinza 300 (divisórias, inputs default)   */
-  --color--gray-200: #E7EAF1;  /* cinza 200 (bg seções, hover de cards)    */
-  --color--gray-50: #F8F9FC;  /* cinza 50  (bg geral light)               */
-
-  /* Brancos */
-  --color--white: #FFFFFF;
-
-  /* Overlays em branco (mantidos) */
-  --color--overlay-75: rgba(255, 255, 255, 0.75);
-  --color--overlay-50: rgba(255, 255, 255, 0.50);
-  --color--overlay-25: rgba(255, 255, 255, 0.25);
-  --color--overlay-0: rgba(255, 255, 255, 0.00);
+  /* Semantic Aliases */
+  --color--primary: var(--bricks-color-utfpab);
+  --color--primary-hover: var(--bricks-color-ggoxsn);
+  --color--deep-black: var(--bricks-color-dxogit);
+  --color--text-dark: var(--bricks-color-lzwfjx);
+  --color--gray-900: var(--bricks-color-vuxede);
+  --color--gray-600: var(--bricks-color-oyhxuv);
+  --color--gray-500: var(--bricks-color-nmfczu);
+  --color--gray-300: var(--bricks-color-nccynw);
+  --color--gray-200: var(--bricks-color-erofuw);
+  --color--gray-50: var(--bricks-color-yquaag);
+  --color--white: var(--bricks-color-adekln);
+  --color--overlay-75: var(--bricks-color-fzjjgf);
+  --color--overlay-50: var(--bricks-color-fizpsx);
+  --color--overlay-25: var(--bricks-color-bdrddp);
+  --color--overlay-0: var(--bricks-color-rmdbpx);
 }
 
 /* ------------------------------------------------------------------------ */
