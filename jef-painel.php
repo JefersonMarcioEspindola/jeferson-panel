@@ -5,7 +5,7 @@
  * Description: Painel personalizado Jeferson.
  * Author: Jeferson Espindola
  * Author URI: https://jefersonespindola.com/
- * Version: 1.0.3
+ * Version: 1.0.4
  * Text Domain: jef-painel
  */
 
@@ -54,10 +54,10 @@ add_action('admin_head', 'jef_painel_remove_help_tabs');
  * Carregar Css para admin e login
  */
 function jef_painel_style() {
-    wp_enqueue_style('jef-painel-style', plugins_url('jef-painel-style.css', __FILE__), array(), '1.0.3');
+    wp_enqueue_style('jef-painel-style', plugins_url('jef-painel-style.css', __FILE__), array(), '1.0.4');
 }
 function jef_painel_style_login() {
-    wp_enqueue_style('jef-painel-style-login', plugins_url('jef-painel-style-login.css', __FILE__), array(), '1.0.3');
+    wp_enqueue_style('jef-painel-style-login', plugins_url('jef-painel-style-login.css', __FILE__), array(), '1.0.4');
 }
 add_action('admin_enqueue_scripts', 'jef_painel_style');
 add_action('login_enqueue_scripts', 'jef_painel_style_login');
@@ -72,7 +72,7 @@ function jef_painel_additional_admin_color_schemes() {
     wp_admin_css_color(
         'jef-painel',
         'Painel Jeferson',
-        plugins_url( "jef-painel-colors.css", __FILE__) . '?ver=1.0.3'
+        plugins_url( "jef-painel-colors.css", __FILE__) . '?ver=1.0.4'
     );
 }
 add_action('admin_init', 'jef_painel_additional_admin_color_schemes');
