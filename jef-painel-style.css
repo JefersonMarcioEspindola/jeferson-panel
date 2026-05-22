@@ -87,22 +87,23 @@ html.wp-toolbar{
 #menu-jef-painel-logo {
     height: 80px;
 }
-#menu-jef-painel-logo:hover, #menu-jef-painel-logo a:hover  {
-    background: transparent!important;
-}
-#menu-jef-painel-logo .wp-menu-image{
-    width: 100%!important;
+#menu-jef-painel-logo .wp-menu-image {
+    width: 100% !important;
     padding: 20px;
     box-sizing: border-box;
-    height: 80px!important;
+    height: 80px !important;
     padding-top: 0px;
     padding-left: 10px;
-    padding-right: 40px;
+    padding-right: 24px;
 }
 #menu-jef-painel-logo .wp-menu-image img {
     opacity: 1;
     width: 100%;
-    max-width: 150px;
+    max-width: 170px;
+    transition: transform 0.2s ease;
+}
+#menu-jef-painel-logo:hover .wp-menu-image img {
+    transform: scale(1.05);
 }
 
 
