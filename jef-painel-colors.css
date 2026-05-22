@@ -182,6 +182,13 @@ textarea:focus {
   color: var(--color--white);
 }
 
+#menu-jef-painel-logo a:hover,
+#menu-jef-painel-logo:hover,
+#menu-jef-painel-logo > a.menu-top:focus {
+  background-color: transparent !important;
+  color: transparent !important;
+}
+
 #adminmenu li.menu-top:hover div.wp-menu-image:before,
 #adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
   color: var(--color--white);

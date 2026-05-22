@@ -5,7 +5,7 @@
  * Description: Painel personalizado Jeferson.
  * Author: Jeferson Espindola
  * Author URI: https://jefersonespindola.com/
- * Version: 1.0.7
+ * Version: 1.0.8
  * Text Domain: jef-painel
  */
 
