@@ -189,3 +189,16 @@ if(is_admin() && !current_user_can('administrator') ) {
   </style>';
 }
 }
+
+/**
+ * Forçar a limpeza de cache do arquivo jef-painel-colors.css injetando a data de modificação
+ */
+add_filter('style_loader_src', 'jef_painel_colors_cache_bust', 9999, 2);
+function jef_painel_colors_cache_bust($src, $handle) {
+    if (strpos($src, 'jef-painel-colors.css') !== false) {
+        $ver = filemtime(plugin_dir_path(__FILE__) . 'jef-painel-colors.css');
+        $src = remove_query_arg('ver', $src);
+        $src = add_query_arg('ver', $ver, $src);
+    }
+    return $src;
+}
