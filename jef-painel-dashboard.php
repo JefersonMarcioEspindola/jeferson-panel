@@ -130,7 +130,7 @@ include('variaveis.php');
 ?>
 
 <div class="wrap user-info">
-    <a href="<?=home_url()?>" target="_blank"><?php esc_html_e( 'Acessar Site', 'jef-painel' ); ?></a> &nbsp;
+    <a href="<?=home_url()?>" target="_blank"><?php esc_html_e( 'Visit Site', 'jef-painel' ); ?></a> &nbsp;
 
     <div class="jef-painel-right">
         <span class="no-mobile">
@@ -139,17 +139,17 @@ include('variaveis.php');
         </span>
         <span class="no-mobile">
         <?php echo $current_user->user_email ?> </span> |
-        <a href="<?php echo wp_logout_url(); ?>"><?php esc_html_e( 'Sair', 'jef-painel' ); ?></a>
+        <a href="<?php echo wp_logout_url(); ?>"><?php esc_html_e( 'Log Out', 'jef-painel' ); ?></a>
 
     </div>
 
 </div>
 <div class="wrap jef-painel-dashboard-body text-center">
-    <img src="<?php echo esc_url( plugins_url( 'adminimg.svg', __FILE__ ) ); ?>" alt="Ilustração-jef-painel">
-    <p class="texto1"><?php esc_html_e( 'Bem-vindo ao Painel Jeferson', 'jef-painel' ); ?></p>
+    <img src="<?php echo esc_url( plugins_url( 'adminimg.svg', __FILE__ ) ); ?>" alt="Jeferson Panel illustration">
+    <p class="texto1"><?php esc_html_e( 'Welcome to Jeferson Panel', 'jef-painel' ); ?></p>
 
     <p class="texto2">
-        <?php esc_html_e( 'Acesse todos os tutoriais de uso enviados para o seu e-mail antes de iniciar o gerenciamento do conteúdo do seu site.', 'jef-painel' ); ?>
+        <?php esc_html_e( 'Access all usage tutorials sent to your email before starting to manage your site\'s content.', 'jef-painel' ); ?>
     </p>
   
     <?php echo $emails ?>
