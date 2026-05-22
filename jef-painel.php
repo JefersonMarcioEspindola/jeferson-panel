@@ -5,7 +5,7 @@
  * Description: Painel personalizado Jeferson.
  * Author: Jeferson Espindola
  * Author URI: https://jefersonespindola.com/
- * Version: 1.0.8
+ * Version: 1.0.9
  * Text Domain: jef-painel
  */
 
@@ -105,7 +105,7 @@ function jef_painel_adjust_menu(){
   // $menu[1] = array( get_bloginfo( 'name' ), 'read', 'home_url()', '', 'menu-top', 'menu-ver-site', 'dashicons-admin-home' );
   // $menu['0.1'] = array( $current_user->display_name, 'read', 'profile.php', '', 'menu-top', 'menu-user', get_avatar_url($current_user->id) );
   $menu['0.1'] = array( " ", 'read', 'admin.php?page=jef_painel_dashboard', '', 'menu-top', 'menu-jef-painel-logo', plugins_url('logo-interna.svg', __FILE__));
-  $menu[9999999] = array( __( 'Sair' ), 'read', wp_logout_url(), '', 'menu-top menu-logout', 'menu-logout', 'dashicons-migrate' );
+  $menu[9999999] = array( __( 'Sair', 'jef-painel' ), 'read', wp_logout_url(), '', 'menu-top menu-logout', 'menu-logout', 'dashicons-migrate' );
 }
 
 /**
@@ -113,7 +113,7 @@ function jef_painel_adjust_menu(){
  */
 add_action( 'admin_menu', 'jef_painel_dashboard' );
 function jef_painel_dashboard(){
-    add_menu_page('jef_painel_dashboard', 'Início', 'read', 'jef_painel_dashboard', 'jef_painel_include_dashboard');
+    add_menu_page('jef_painel_dashboard', __( 'Início', 'jef-painel' ), 'read', 'jef_painel_dashboard', 'jef_painel_include_dashboard');
     remove_menu_page('jef_painel_dashboard');
     global $parent_file, $submenu_file;
     $parent_file = 'index.php';
@@ -140,7 +140,7 @@ function jef_painel_dashboard_admin_title($admin_title, $title)
 {
     global $pagenow;
     if( $pagenow == 'admin.php' && $_GET['page'] == 'jef_painel_dashboard') {
-        $admin_title = 'Painel ' . $admin_title;
+        $admin_title = __( 'Painel', 'jef-painel' ) . ' ' . $admin_title;
     }
     return $admin_title;
 }
