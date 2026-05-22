@@ -1,0 +1,207 @@
+ #wpcontent,
+    #wpfooter {
+        margin-left: 220px;
+    }
+@media (min-width: 783px) {
+    #adminmenuback,
+    #adminmenuwrap,
+    #adminmenu,
+    #adminmenu .wp-submenu {
+        width: 220px;
+    }
+
+    #adminmenu .wp-submenu {
+        left: 220px;
+    }
+
+    #adminmenu .wp-not-current-submenu .wp-submenu,
+    .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+        min-width: 220px;
+    }
+}
+    /* Query Monitor plugin */
+    body.wp-admin #qm {
+        margin-left: 220px !important;
+    }
+
+    /* Gutenberg */
+    .auto-fold .edit-post-header {
+        left: 220px;
+    }
+
+    .auto-fold .components-notice-list {
+        left: 220px;
+    }
+
+    /* Various themes fix */
+    @media screen and (min-width:961px){
+        body.auto-fold .edit-post-layout__content {
+            margin-left: 220px;
+        }
+    }
+
+/* Oculta a barra admin */
+#wpadminbar {
+    display: none;
+}
+/* Remove o padding da barra admin removida */
+html.wp-toolbar{
+    padding-top:0px;
+}
+
+/* Remove o botão de diminuir a barra laratel */
+#collapse-menu {
+    display: none;
+}
+
+/*  Separador do link sair */
+#menu-logout {
+    margin-top: 30px!important;
+}
+#menu-logout::before {
+    content: "";
+    border-top: 1px solid #f2f2f22b;
+    width: 100%;
+    position: absolute;
+    top: -15px;
+}
+
+#menu-ver-site .wp-menu-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 30px!important;
+}
+#menu-ver-site::after {
+    content: "";
+    border-top: 1px solid #f2f2f22b;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+}
+#menu-user img {
+    opacity: 1;
+    width: 20px;
+    padding-top: 6px!important;
+}
+#menu-jef-painel-logo {
+    height: 80px;
+}
+#menu-jef-painel-logo:hover, #menu-jef-painel-logo a:hover  {
+    background: transparent!important;
+}
+#menu-jef-painel-logo .wp-menu-image{
+    width: 100%!important;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 80px!important;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+#menu-jef-painel-logo .wp-menu-image img {
+    opacity: 1;
+    width: 100%;
+    max-width: 120px;
+}
+
+
+#adminmenu li  a{
+    padding-left: 10px!important;
+    margin-top: 7px;
+}
+
+
+
+
+#newtogglemenu {
+    background: #242424;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    z-index: 999999;
+    top: 0px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+/* Mobile */
+
+@media (min-width: 783px) {
+    #newtogglemenu {
+        display: none;
+    }
+}
+@media (min-width: 783px) and (max-width: 960px) {
+    #menu-jef-painel-logo {
+        display: none;
+    }
+    #adminmenu li a {
+        padding-left: 0px!important;
+    }
+}
+@media (max-width: 960px) {
+
+}
+@media (max-width: 783px) {
+    #adminmenuwrap {
+        padding-top: 33px;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+        width: 100%;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#adminmenu li:first-child > a.menu-top:focus {
+    background: transparent;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 3px;
+
+    top: 25px;
+    left: 10px;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+
+/* Responsive Embed */
+
+

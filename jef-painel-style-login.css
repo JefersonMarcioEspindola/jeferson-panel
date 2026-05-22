@@ -1,0 +1,58 @@
+body {
+    background: #000000;
+    background-size: cover;
+    display: flex;
+}
+.login h1 a {
+    background: #fff url(./logo-login.svg);
+    margin: auto;
+    background-size: 160px;
+    width: 160px;
+    padding: 20px;
+    padding-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -10px;
+}
+
+.language-switcher {
+    display: none !important;
+}
+
+#login {
+    width: 400px;
+    background: #fff;
+    padding: 50px;
+    position: relative;
+}
+label{
+    width: 100%!important;
+}
+#loginform {
+    box-shadow: none;
+    padding-bottom: 10px;
+}
+.login form{
+    border: none;
+}
+input {
+    border: none!important;
+    border-bottom: 1px solid #ccc!important;
+    border-radius: 0px!important;
+    box-shadow: none!important;
+}
+.forgetmenot, #backtoblog{
+    display: none;
+}
+input:focus{
+    border-bottom-color: #21404e!important;
+}
+.login #nav a {
+    text-decoration: none;
+
+    color: #21404e;
+}
+.login #nav {
+     position: absolute;
+        bottom: 23px;
+}
