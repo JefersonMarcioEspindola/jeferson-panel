@@ -4,7 +4,7 @@ body {
     display: flex;
 }
 .login h1 a {
-    background: #fff url(./logo-login.svg);
+    background: #fff url(../images/logo-login.svg);
     margin: auto;
     background-size: 200px;
     width: 240px;

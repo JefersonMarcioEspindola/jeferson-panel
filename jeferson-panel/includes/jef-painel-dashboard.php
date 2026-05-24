@@ -131,36 +131,36 @@ h2 {
 </style>
 <?php
 $current_user = wp_get_current_user();
-include('variaveis.php');
+$emails       = '';
+$variaveis    = dirname( __DIR__ ) . '/variaveis.php';
+if ( file_exists( $variaveis ) ) {
+    include $variaveis;
+}
 ?>
 
 <div class="wrap user-info">
-    <a href="<?=home_url()?>" target="_blank"><?php esc_html_e( 'Visit Site', 'jef-painel' ); ?></a> &nbsp;
+    <a href="<?php echo esc_url( home_url() ); ?>" target="_blank"><?php esc_html_e( 'Visit Site', 'jef-painel' ); ?></a> &nbsp;
 
     <div class="jef-painel-right">
         <span class="no-mobile">
-
-        <?php echo date("d/m/Y @ H:i") ?> |
+        <?php echo esc_html( date( 'd/m/Y @ H:i' ) ); ?> |
         </span>
         <span class="no-mobile">
-        <?php echo $current_user->user_email ?> </span> |
-        <a href="<?php echo wp_logout_url(); ?>"><?php esc_html_e( 'Log Out', 'jef-painel' ); ?></a>
+        <?php echo esc_html( $current_user->user_email ); ?> </span> |
+        <a href="<?php echo esc_url( wp_logout_url() ); ?>"><?php esc_html_e( 'Log Out', 'jef-painel' ); ?></a>
 
     </div>
 
 </div>
 <div class="wrap jef-painel-dashboard-body text-center">
-    <img src="<?php echo esc_url( plugins_url( 'adminimg.svg', __FILE__ ) ); ?>" alt="Jeferson Panel illustration">
+    <img src="<?php echo esc_url( plugins_url( 'assets/images/adminimg.svg', dirname( __DIR__ ) . '/jef-painel.php' ) ); ?>" alt="Jeferson Panel illustration">
     <p class="texto1"><?php esc_html_e( 'Welcome to Jeferson Panel', 'jef-painel' ); ?></p>
 
     <p class="texto2">
         <?php esc_html_e( 'Access all usage tutorials sent to your email before starting to manage your site\'s content.', 'jef-painel' ); ?>
     </p>
   
-    <?php echo $emails ?>
-
-
-    
-
+    <?php echo wp_kses_post( $emails ); ?>
 
 </div>
+
