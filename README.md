@@ -1,7 +1,7 @@
 [🇺🇸 Read in English](#english) | [🇧🇷 Leia em Português](#portugues)
 
 <a name="english"></a>
-# Painel Jeferson (Jeferson Panel)
+# Painel Jeferson (Jeferson Panel) - Version 1.1.3
 
 A WordPress plugin that personalizes the WordPress admin area with a clean and custom dashboard, dedicated stylesheets, custom admin color schemes, and a refined login page.
 
@@ -23,10 +23,16 @@ A WordPress plugin that personalizes the WordPress admin area with a clean and c
 - **Input Sanitization**: Query variables are sanitized using `sanitize_text_field` and `wp_unslash`.
 - **Late Escaping**: Values printed inside HTML wrappers are escaped using appropriate functions (`esc_url`, `esc_html`, and `wp_kses_post`).
 
+## Changelog
+
+### 1.1.3 (2026-05-24)
+- **Changed**: Restructured the plugin repository directories to follow standard WordPress guidelines.
+- **Fixed**: Updated internal documentation paths and file links.
+
 ---
 
 <a name="portugues"></a>
-# Painel Jeferson
+# Painel Jeferson - Versão 1.1.3
 
 Um plugin para WordPress que personaliza a área administrativa com um painel simplificado e customizado, folhas de estilo dedicadas, esquema de cores administrativo próprio e tela de login refinada.
 
@@ -47,3 +53,9 @@ Um plugin para WordPress que personaliza a área administrativa com um painel si
 - **Proteção contra Acesso Direto**: Todos os arquivos PHP incluem a checagem padrão para impedir execução direta (`defined('ABSPATH') || exit;`).
 - **Sanitização de Inputs**: Parâmetros de requisições globais são tratados com `sanitize_text_field` e `wp_unslash`.
 - **Escape Tardio**: Toda renderização em HTML utiliza funções de escape recomendadas (`esc_url`, `esc_html` e `wp_kses_post`).
+
+## Changelog
+
+### 1.1.3 (2026-05-24)
+- **Changed**: Reestruturação das pastas e arquivos do repositório para seguir as diretrizes padrão do WordPress.
+- **Fixed**: Atualização dos caminhos internos de documentação e links de arquivos.
