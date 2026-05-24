@@ -7,7 +7,13 @@
  * Author URI: https://jefersonespindola.com/
  * Version: 1.1.1
  * Text Domain: jef-painel
+ * Requires at least: 5.8
+ * Requires PHP: 7.4
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
 
 
 /**
@@ -127,7 +133,7 @@ add_action('admin_init', 'jef_painel_redirect_dashboard');
 function jef_painel_redirect_dashboard() {
     global $pagenow;
     if($pagenow == 'index.php'){
-        wp_redirect(admin_url('/admin.php?page=jef_painel_dashboard'), 301);
+        wp_safe_redirect(admin_url('/admin.php?page=jef_painel_dashboard'), 301);
         exit;
     }
 }
